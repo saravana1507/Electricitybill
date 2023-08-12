@@ -6,14 +6,13 @@ import org.springframework.stereotype.Service;
 	public class EbService {
 
 		public EbDto ebCalculater(Integer unit) {
-		
 			EbDto eb=new EbDto();
 			eb.setUnit(unit);
-			if(eb.getUnit() >eb.getUnit1_FirstValue()&& eb.getUnit()<=eb.getUnit1_FifthValue())
-			  // ( unit>0&&unit<=500)
+			if(eb.getUnit() >=eb.getUnit1_FirstValue()&& eb.getUnit()<=eb.getUnit1_FifthValue())
+			  // ( unit>=0&&unit<=500)
 			{
-					if(eb.getUnit()>eb.getUnit1_FirstValue()&& eb.getUnit()<=eb.getUnit1_SecondValue())
-						//(unit>0&&unit<=100)
+					if(eb.getUnit()>=eb.getUnit1_FirstValue()&& eb.getUnit()<=eb.getUnit1_SecondValue())
+						//(unit>=0&&unit<=100)
 						{
 						eb.setFirstDifferent( eb.getUnit()-eb.getUnit1_FirstValue()); // diff= unit-0;
 						eb.setFirstPrice(eb.getFirstDifferent()*eb.getUnit1_Firstfee());  // price=dif*0;

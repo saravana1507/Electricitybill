@@ -30,8 +30,8 @@ public ModelAndView calculater( @RequestParam Integer unit)
 	EbDto n= eb.ebCalculater(unit);
 	ModelAndView ob= new ModelAndView();
 	ob.addObject("eb", n);
-	if(unit >n.getUnit1_FirstValue()&& unit<=n.getUnit1_FifthValue()){
-	if(unit>n.getUnit1_FirstValue()&&unit<=n.getUnit1_SecondValue()) {ob.setViewName("calculator");}	
+	if(unit >=n.getUnit1_FirstValue()&& unit<=n.getUnit1_FifthValue()){
+	if(unit>=n.getUnit1_FirstValue()&&unit<=n.getUnit1_SecondValue()) {ob.setViewName("calculator");}	
 	if(unit>n.getUnit1_SecondValue()&&unit<=n.getUnit1_ThirdValue()) {ob.setViewName("calculaterfirst");}
 	if(unit>n.getUnit1_ThirdValue()&&unit<=n.getUnit1_FourthValue()) {ob.setViewName("calculatersecond");}
 	if(unit>n.getUnit1_FourthValue()&&unit<=n.getUnit1_FifthValue()) {ob.setViewName("calculaterthird");}}

@@ -3,14 +3,66 @@
   <head>
     <title>Eb-Calculater</title>
     <style>
-    table {width:70%; height: 30%; border: 3px solid teal;}
-     th {border: 2px solid cornflowerblue;padding:10px;}
+   
+    body{
+       height:82%;
+       width:100%;
+       align-items:center;
+       background-image:url(/img/ebbb.webp);
+       background-position: center; 
+       background-repeat: no-repeat; 
+       background-size: 120% 140%;
+        }
+   form{
+     margin:8% 27%;
+     width:30rem;
+     height:22rem;
+     background:slategray;
+     border-radius:40px;
+     float:center;
+     padding: 5px 30px;
+     opacity:;
+          }
+   
+    table 
+    {
+    width:70%;
+    height: 30%;
+     color:black;
+      text-shadow: 1px 1px gray;
+     border: 3px solid aliceblue;
+          }
+     th
+      {
+      border: 2px solid deepskyblue;
+      padding:6px;
+      }
+      h1
+      {
+        text-decoration: underline;
+        }
+        h2
+        {
+        margin:2% 1%;
+        }
+       h3
+        {
+        margin:4% 25%;
+        }
+        input[type=submit]{
+      height:12%;
+      width:40%;
+      margin-left:25%;
+      margin-bottom:40%;
+      
+     }
 </style>
  </head>
  <body>
- <h1 align="center">calculate</h1>
+       <form action="start">
+ <h1 align="center">calculater</h1>
  <div>
- <h2 id="unit"> Current unit=${eb.unit}</h2>
+ <h2 id="unit"> Unit=${eb.unit}</h2>
  <table >
          <tr>
         <th> No </th>
@@ -29,7 +81,7 @@
        <th>${eb.firstPrice}</th>
         </tr>
        </table>
-       <h3 align="center">Total Amount =Rs.${eb.total}</h3>
+       <h3 align="right">Total Amount = Rs.${eb.total}</h3>
        </div>
        <form action="start">
        <input type="submit" value="BACK">
