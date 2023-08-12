@@ -1,6 +1,7 @@
 <html>
     <head>
-    <title>eb-Calculater</title>
+    <title>Eb-Calculater</title>
+      <link rel="icon" type="image/x-icon" href="/img/electric.png">
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&family=Poppins&display=swap');
 
@@ -14,26 +15,24 @@
 body{
        height:82%;
        width:100%;
-       align-items:center;
        background-image:url(/img/eb.webp);
        background-position: center; 
-       background-repeat: no-repeat; 
        background-size: 125% 140%;
      }
 
 form{
      margin:8% 34%;
-     width:25rem;
-     height:20rem;
-     background:silver;
+     width:32rem;
+     height:25rem;
+     background:teal;
      border-radius:20px;
      float:left;
-     
+     opacity:0.9; 
           }
 
 h1{
-      margin-bottom:35px;
-      margin-top:17px;
+      margin-bottom:30px;
+      margin-top:30px;
    font-size:50px;
    text-align:center;
    color:navy ;
@@ -44,32 +43,39 @@ h1{
 
 label{
       font-size: 23px;
-      margin-left:5%;
-      margin-bottom:25px;
+      margin-left:3%;
+      margin-bottom:5px;
       text-shadow:2px;
       }
 
 input[type=text]{
       height:12%;
       width:40%;
-      margin-left:2%;
-      margin-bottom:15%;
+      margin-left:3%;
+     margin-bottom:5px;
+        border-radius:10px;	   
      }
+  div
+  {      margin-left:25px;
+  margin-bottom:50px;
+      margin-top:60px; 
+       }
 input[type=submit]{
       height:12%;
       width:70%;
-      margin-left:15%;
-      margin-bottom:15%;
-     }     
+  margin:5% 15%;
+        border-radius:10px;	   
+     } 
 </style>
     </head>
         <body>
                  <form action="calc">
                  <h1>EB-Calculater</h1>
-                 
+                 <div>
                          <label>Enter The Unit : </label>
                          <input type ="text"  id="eb1" name="unit" placeholder="Enter the value" autocomplete=off required pattern="[0-9]+" >
                          </input>
+                       </div>
                          <input type ="submit"value ="CALCULATE">                     
             </form>
             

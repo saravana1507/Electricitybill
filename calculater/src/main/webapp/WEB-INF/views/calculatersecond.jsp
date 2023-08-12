@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Eb-Calculater</title>
+                  <link rel="icon" type="image/x-icon" href="/img/eblogo.png">
     <style>
    
     body{
@@ -30,7 +31,7 @@
     height: 30%;
      color:black;
       text-shadow: 1px 1px gray;
-     border: 3px solid aliceblue;
+     border: 3px solid teal;
           }
      th
       {
@@ -38,7 +39,7 @@
       padding:6px;
       }
       h1
-      {
+      {      color:navy;
         text-decoration: underline;
         }
         h2
@@ -54,7 +55,7 @@
       width:40%;
       margin-left:25%;
       margin-bottom:40%;
-      
+              border-radius:10px;	   
      }
 </style>
  </head>
