@@ -36,7 +36,7 @@
           }
      th
       {
-      border: 2px solid deepskyblue;
+      border: 2px solid teal;
       padding:6px;
       }
       h1

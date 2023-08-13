@@ -30,14 +30,15 @@
     {
     width:100%;
     height: 30%;
-    color:black;
     text-shadow: 1px 1px gray;
      border: 2px solid teal;
           }
      th
       {
-      border: 2px solid deepskyblue;
+      border: 2px solid teal;
       padding:6px;
+          color:black;
+      
       }
       h1
       {

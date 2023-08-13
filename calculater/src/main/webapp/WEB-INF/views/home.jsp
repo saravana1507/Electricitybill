@@ -53,7 +53,8 @@ input[type=text]{
       width:40%;
       margin-left:3%;
      margin-bottom:5px;
-        border-radius:10px;	   
+        border-radius:10px;
+          padding-left:10px	   
      }
   div
   {      margin-left:25px;
@@ -73,7 +74,7 @@ input[type=submit]{
                  <h1>EB-Calculater</h1>
                  <div>
                          <label>Enter The Unit : </label>
-                         <input type ="text"  id="eb1" name="unit" placeholder="Enter the value" autocomplete=off required pattern="[0-9]+" >
+                         <input type ="text"  id="eb1" name="unit" placeholder="Enter the value" autocomplete=off required pattern="[0-9]+" maxlength="10">
                          </input>
                        </div>
                          <input type ="submit"value ="CALCULATE">                     
