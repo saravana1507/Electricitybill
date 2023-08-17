@@ -10,7 +10,7 @@
        height:82%;
        width:100%;
        align-items:center;
-       background-image:url(/img/ebbb.webp);
+       background-image:url(/img/back.jpg);
        background-position: center; 
        background-repeat: no-repeat; 
        background-size: 120% 140%;
@@ -19,19 +19,19 @@
      margin:8% 27%;
      width:30rem;
      height:22rem;
-     background:slategray;
-     border-radius:40px;
+ background: rgba(40, 40, 30, .8);
+  border: 5px solid rgba(60, 40, 10, .8);
+       border-radius:40px;
      float:center;
      padding: 5px 30px;
-     opacity:;
+     opacity:0.8;
           }
    
     table 
     {
-    width:70%;
+    width:100%;
     height: 30%;
-     color:black;
-      text-shadow: 1px 1px gray;
+     color:chocolate;
      border: 3px solid teal;
           }
      th
@@ -41,23 +41,29 @@
       }
       h1
       {
-             color:navy;
+      margin-bottom:30px;
+      margin-top:10px;
+         font-size:50px;
+             color:cadetblue;
         text-decoration: underline;
         }
         h2
         {
+        color:lightyellow;     
         margin:2% 1%;
         }
        h3
-        {
+        {  
+         font-size:50px;           
+        color:lightyellow;       
         margin:4% 25%;
         }
         input[type=submit]{
-      height:12%;
+      height:8%;
       width:40%;
       margin-left:25%;
       margin-bottom:40%;
-              border-radius:10px;	   
+      border-radius:10px;	   
       
      }
 </style>
@@ -85,7 +91,7 @@
        <th>${eb.firstPrice}</th>
         </tr>
        </table>
-       <h3 align="right">Total Amount = Rs.${eb.total}</h3>
+       <h3 align="left">Total Amount = Rs.${eb.total}</h3>
        </div>
        <form action="start">
        <input type="submit" value="BACK">
