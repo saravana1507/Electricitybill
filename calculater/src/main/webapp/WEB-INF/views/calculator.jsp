@@ -54,9 +54,9 @@
         }
        h3
         {  
-         font-size:50px;           
+         font-size:25px;           
         color:lightyellow;       
-        margin:4% 25%;
+        margin:4% 20%;
         }
         input[type=submit]{
       height:8%;
@@ -91,7 +91,7 @@
        <th>${eb.firstPrice}</th>
         </tr>
        </table>
-       <h3 align="left">Total Amount = Rs.${eb.total}</h3>
+       <h3 >Total Amount = Rs.${eb.total}</h3>
        </div>
        <form action="start">
        <input type="submit" value="BACK">
